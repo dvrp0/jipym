@@ -17,8 +17,8 @@
 
     .input {
         font-family: "KOTRALEAP";
-        font-size: 204px;
-        letter-spacing: 17px;
+        font-size: 12.75rem;
+        letter-spacing: 1rem;
         opacity: 0.4;
         color: transparent;
         -webkit-text-stroke: 0.5px var(--c-foreground);
@@ -28,7 +28,7 @@
 
     .body {
         position: relative;
-        font-size: 30px;
+        font-size: 1.825rem;
         margin-top: 0;
         margin-bottom: 0.5rem;
     }
@@ -36,7 +36,7 @@
     .date {
         font-family: "Pretendard";
         font-variation-settings: "wght" 900;
-        font-size: 20px;
+        font-size: 1.25rem;
         opacity: 0.15;
     }
 </style>

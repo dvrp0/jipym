@@ -16,7 +16,6 @@
 :root {
     --c-accent: #FFFFFF;
     --c-foreground: #FFFFFF;
-    --c-foreground-transparent: rbga(255, 255, 255, 0.4);
     --c-background-temp: #665B70;
     --width: 90rem;
 
