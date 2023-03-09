@@ -1,0 +1,52 @@
+@font-face {
+    font-display: swap;
+    font-family: "Pretendard";
+    font-weight: normal;
+    font-style: normal;
+    src: url("$assets/fonts/PretendardVariable.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "KOTRALEAP";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRALEAP.woff2") format("woff2");
+}
+
+:root {
+    --c-accent: #FFFFFF;
+    --c-foreground: #FFFFFF;
+    --c-foreground-transparent: rbga(255, 255, 255, 0.4);
+    --c-background-temp: #665B70;
+    --width: 90rem;
+
+    color: var(--c-foreground);
+    background-color: var(--c-background-temp);
+    font-family: "Pretendard", sans-serif;
+    font-variation-settings: "wght" 300;
+    line-height: 1.8;
+    word-break: keep-all;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: var(--width);
+    padding: 8rem 1rem;
+    margin: 0 auto;
+}
+
+a {
+    color: var(--c-foreground);
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+    line-height: 0;
+}
+
+::selection {
+    color: var(--c-background-temp);
+    background: var(--c-accent);
+}
