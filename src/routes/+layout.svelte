@@ -6,6 +6,7 @@
     <div class="nav-container">
         <a href="/"><img alt="홈" src="/images/logo.png" /></a>
         <ul>
+            <li><a href="/gallery">갤러리</a></li>
             <li><a href="/about">소개</a></li>
         </ul>
     </div>
@@ -33,7 +34,7 @@
     }
 
     .nav-container {
-        padding: 0 calc((var(--width) - 100%) / -2);
+        padding: 0 calc(calc(100vw - var(--width)) / 2);
         display: flex;
         align-items: center;
         justify-content: space-between;

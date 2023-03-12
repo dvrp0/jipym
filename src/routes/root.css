@@ -16,11 +16,17 @@
 :root {
     --c-accent: #FFFFFF;
     --c-foreground: #FFFFFF;
-    --c-background-temp: #665B70;
+    --c-background-from: #665B70;
+    --c-background-to: #665BFF;
+    --background-angle: 0deg;
     --width: 90rem;
 
     color: var(--c-foreground);
-    background-color: var(--c-background-temp);
+    background: linear-gradient(var(--background-angle), var(--c-background-from), var(--c-background-to)) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: "Pretendard", sans-serif;
     font-variation-settings: "wght" 300;
     line-height: 1.8;
@@ -32,8 +38,7 @@ body {
 }
 
 main {
-    max-width: var(--width);
-    padding: 8rem 1rem;
+    padding: 8rem calc(calc(100vw - var(--width)) / 2);
     margin: 0 auto;
 }
 
@@ -46,6 +51,6 @@ a {
 }
 
 ::selection {
-    color: var(--c-background-temp);
+    /* color: var(--c-background-temp); */
     background: var(--c-accent);
 }
